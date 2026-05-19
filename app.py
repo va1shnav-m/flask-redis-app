@@ -13,6 +13,6 @@ def home():
     r.incr('counter')
     count = r.get('counter').decode('utf-8')
 
-    return f"Visitor count: {count}"
+    return f"Welcome Vaishnav! Visitor count: {count}"
 
 app.run(host='0.0.0.0', port=5000)
